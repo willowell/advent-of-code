@@ -1,3 +1,10 @@
+/* 
+ * Copyright 2021 bbstilson <https://github.com/bbstilson>.
+ * The source code below is part of [Advent of Code Data](https://github.com/bbstilson/advent-of-code-data) and is
+ * licensed under the MIT license. For the full license text, please visit https://opensource.org/license/mit/.
+ * 
+ * 2023 Dec 01 - Modified by William Howell
+ */
 package harness
 
 def time[A](block: => A): A = time("TIME")(block)
