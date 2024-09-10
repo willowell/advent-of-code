@@ -10,9 +10,9 @@
 // SCALA VERSION AND PLATFORMS                                                                                        //
 //====================================================================================================================//
 
-//> using scala 3.3.1
+//> using scala 3.3.3
 
-// MINIMUM JVM VERSION: 21
+//> using jvm 21
 
 //====================================================================================================================//
 // DEPENDENCIES                                                                                                       //
@@ -22,39 +22,43 @@
 */
 
 /* Toolkits */
-//> using dep "org.typelevel::toolkit:0.1.17"
-
-/* Test Frameworks */
-//> using dep "org.scalameta::munit:1.0.0-M10"
+//> using dep "org.typelevel::toolkit:0.1.27"
+//> using dep "org.typelevel::toolkit-test:0.1.27"
 
 /* Typelevel */
-//> using dep "org.typelevel::cats-core:2.10.0"
-//> using dep "org.typelevel::cats-free:2.10.0"
-//> using dep "org.typelevel::cats-mtl:1.3.1"
-//> using dep "org.typelevel::kittens:3.0.0"
+//> using dep "org.typelevel::cats-core:2.12.0"
+//> using dep "org.typelevel::cats-free:2.12.0"
+//> using dep "org.typelevel::cats-mtl:1.5.0"
+//> using dep "org.typelevel::cats-parse:1.0.0"
+//> using dep "org.typelevel::kittens:3.4.0"
 //> using dep "org.typelevel::spire:0.18.0"
 
 /* Circe */
-//> using dep "io.circe::circe-core:0.14.6"
-//> using dep "io.circe::circe-generic:0.14.6"
-//> using dep "io.circe::circe-parser:0.14.6"
+//> using dep "io.circe::circe-core:0.14.9"
+//> using dep "io.circe::circe-generic:0.14.9"
+//> using dep "io.circe::circe-parser:0.14.9"
 
 /* Monocle */
-//> using dep "dev.optics::monocle-core:3.2.0"
+//> using dep "dev.optics::monocle-core:3.3.0"
 
 /* Scodec */
-//> using dep "org.scodec::scodec-bits:1.1.37"
+//> using dep "org.scodec::scodec-bits:1.2.1"
 
 /* Parsley */
-//> using dep "com.github.j-mie6::parsley:4.4.0"
+//> using dep "com.github.j-mie6::parsley:4.5.2"
 
 /* lihaoyi */
-//> using dep "com.lihaoyi::fansi:0.4.0"
-//> using dep "com.lihaoyi::os-lib:0.9.1"
-//> using dep "com.lihaoyi::requests:0.8.0"
+//> using dep "com.lihaoyi::fansi:0.5.0"
+//> using dep "com.lihaoyi::os-lib:0.10.5"
+//> using dep "com.lihaoyi::requests:0.9.0"
 
 /* sttp */
 //> using dep "com.softwaremill.sttp.client4::core:4.0.0-M5"
+
+/* Math Stuff */
+//> using dep "ai.dragonfly::slash:0.3.1"
+//> using dep "com.manyangled::coulomb-core:0.8.0"
+//> using dep "com.manyangled::coulomb-units:0.8.0"
 
 //====================================================================================================================//
 // RESOURCES                                                                                                          //
