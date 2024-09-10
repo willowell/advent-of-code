@@ -17,6 +17,10 @@ Like [the *Functional Programming in Scala* repository](https://github.com/fpins
 
 The solutions are all under `/src/solutions/`, organized by year.
 
+Check [the progress chart](./PROGRESS.md) to see how many days I've completed.
+
+Please also take a look [at the credits for this project](./CREDITS.md).
+
 ## How to run the solutions
 
 Each day file is its own program entry. The `/src/core/` directory is a common library does not contain any program entrypoints.
@@ -28,7 +32,8 @@ To run the solutions, please follow these directions:
 3. Scala-CLI will take a couple moments to to start the Bloop build server, collect dependencies, and then run the program.
 4. That's it! If all goes well, you'll see the program's output in your terminal.
 
-> :warning: Don't forget to add the `.run` part!
+> [!WARNING]
+> Don't forget to add the `.run` part!
 > That part corresponds to the main class.
 
 ### How to run specific parts
@@ -36,7 +41,13 @@ To run the solutions, please follow these directions:
 The command above runs both parts of the day's puzzle solution. If you would like to run just one part, you can do that by adding `--part (a or b)` as an additional command line argument like so:
 
 ```sh
-scala-cli run --main.class solutions.y<year number>.d<day number>.run`. For instance, `scala-cli run --main-class solutions.y2015.day01.run -- --part a
+scala-cli run --main-class solutions.y<year number>.d<day number>.run`
+```
+
+For instance,
+
+```sh
+scala-cli run --main-class solutions.y2015.day01.run -- --part a
 ```
 
 This will run part 1 of day 1 in year 2015.

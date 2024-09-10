@@ -1,40 +1,72 @@
 # Progress
 
+## 2024
+
+***TBD***
+
+| Day    | Name            | Part 1 | Part 2 |
+|--------|-----------------|--------|--------|
+| Day  1 |                 | [ ]    | [ ]    |
+| Day  2 |                 | [ ]    | [ ]    |
+| Day  3 |                 | [ ]    | [ ]    |
+| Day  4 |                 | [ ]    | [ ]    |
+| Day  5 |                 | [ ]    | [ ]    |
+| Day  6 |                 | [ ]    | [ ]    |
+| Day  7 |                 | [ ]    | [ ]    |
+| Day  8 |                 | [ ]    | [ ]    |
+| Day  9 |                 | [ ]    | [ ]    |
+| Day 10 |                 | [ ]    | [ ]    |
+| Day 11 |                 | [ ]    | [ ]    |
+| Day 12 |                 | [ ]    | [ ]    |
+| Day 13 |                 | [ ]    | [ ]    |
+| Day 14 |                 | [ ]    | [ ]    |
+| Day 15 |                 | [ ]    | [ ]    |
+| Day 16 |                 | [ ]    | [ ]    |
+| Day 17 |                 | [ ]    | [ ]    |
+| Day 18 |                 | [ ]    | [ ]    |
+| Day 19 |                 | [ ]    | [ ]    |
+| Day 20 |                 | [ ]    | [ ]    |
+| Day 21 |                 | [ ]    | [ ]    |
+| Day 22 |                 | [ ]    | [ ]    |
+| Day 23 |                 | [ ]    | [ ]    |
+| Day 24 |                 | [ ]    | [ ]    |
+| Day 25 |                 | [ ]    | [ ]    |
+
 ## 2023
 
-***AWS (Automated Winter Snow)***
+***The Floating Islands of AWS (Automated Winter Snow)***
 
 > Something is wrong with global snow production, and you've been selected to take a look. The Elves have even given you a map; on it, they've used stars to mark the top fifty locations that are likely to be having problems.
 >
 > You've been doing this long enough to know that to restore snow operations, you need to check all fifty stars by December 25th.
 
-| Day       | Name                                   | Part 1 | Part 2 |
-| --------- | -------------------------------------- | ------ | ------ |
-| Day  1    | Trebuchet?!                            | [x]    | [x]    |
-| Day  2    | Cube Conundrum                         | [x]    | [x]    |
-| Day  3    |                                        | [ ]    | [ ]    |
-| Day  4    |                                        | [ ]    | [ ]    |
-| Day  5    |                                        | [ ]    | [ ]    |
-| Day  6    |                                        | [ ]    | [ ]    |
-| Day  7    |                                        | [ ]    | [ ]    |
-| Day  8    |                                        | [ ]    | [ ]    |
-| Day  9    |                                        | [ ]    | [ ]    |
-| Day 10    |                                        | [ ]    | [ ]    |
-| Day 11    |                                        | [ ]    | [ ]    |
-| Day 12    |                                        | [ ]    | [ ]    |
-| Day 13    |                                        | [ ]    | [ ]    |
-| Day 14    |                                        | [ ]    | [ ]    |
-| Day 15    |                                        | [ ]    | [ ]    |
-| Day 16    |                                        | [ ]    | [ ]    |
-| Day 17    |                                        | [ ]    | [ ]    |
-| Day 18    |                                        | [ ]    | [ ]    |
-| Day 19    |                                        | [ ]    | [ ]    |
-| Day 20    |                                        | [ ]    | [ ]    |
-| Day 21    |                                        | [ ]    | [ ]    |
-| Day 22    |                                        | [ ]    | [ ]    |
-| Day 23    |                                        | [ ]    | [ ]    |
-| Day 24    |                                        | [ ]    | [ ]    |
-| Day 25    |                                        | [ ]    | [ ]    |
+| Day    | Name                            | Part 1 | Part 2 |
+|--------|---------------------------------|--------|--------|
+| Day  1 | Trebuchet?!                     | [x]    | [x]    |
+| Day  2 | Cube Conundrum                  | [x]    | [x]    |
+| Day  3 | Gear Ratios                     | [x]    | [x]    |
+| Day  4 | Scratchcards                    | [x]    | [x]    |
+| Day  5 | If You Give A Seed A Fertilizer | [ ]    | [ ]    |
+| Day  6 | Wait For It                     | [x]    | [x]    |
+| Day  7 | Camel Cards                     | [x]    | [x]    |
+| Day  8 | Haunted Wasteland               | [x]    | [x]    |
+| Day  9 | Mirage Maintenance              | [x]    | [x]    |
+| Day 10 | Pipe Maze                       | [ ]    | [ ]    |
+| Day 11 | Cosmic Expansion                | [x]    | [x]    |
+| Day 12 | Hot Springs                     | [ ]    | [ ]    |
+| Day 13 | Point of Incidence              | [ ]    | [ ]    |
+| Day 14 | Parabolic Reflector Dish        | [ ]    | [ ]    |
+| Day 15 | Lens Library                    | [x]    | [ ]    |
+| Day 16 | The Floor Will Be Lava          | [ ]    | [ ]    |
+| Day 17 | Clumsy Crucible                 | [ ]    | [ ]    |
+| Day 18 | Lavaduct Lagoon                 | [ ]    | [ ]    |
+| Day 19 | Aplenty                         | [ ]    | [ ]    |
+| Day 20 | Pulse Propagation               | [ ]    | [ ]    |
+| Day 21 | Step Counter                    | [ ]    | [ ]    |
+| Day 22 | Sand Slabs                      | [ ]    | [ ]    |
+| Day 23 | A Long Walk                     | [ ]    | [ ]    |
+| Day 24 | Never Tell Me the Odds          | [ ]    | [ ]    |
+| Day 25 | Snowverload                     | [ ]    | [ ]    |
 
 ## 2022
 
@@ -42,33 +74,33 @@
 
 > Santa's reindeer typically eat regular reindeer food, but they need a lot of magical energy to deliver presents on Christmas. For that, their favorite snack is a special type of star fruit that only grows deep in the jungle. The Elves have brought you on their annual expedition to the grove where the fruit grows.
 
-| Day       | Name                                   | Part 1 | Part 2 |
-| --------- | -------------------------------------- | ------ | ------ |
-| Day  1    | Calorie Counting                       | [x]    | [x]    |
-| Day  2    | Rock Paper Scissors                    | [x]    | [x]    |
-| Day  3    | Rucksack Reorganization                | [x]    | [x]    |
-| Day  4    | Camp Cleanup                           | [x]    | [x]    |
-| Day  5    | Supply Stacks                          | [x]    | [x]    |
-| Day  6    | Tuning Trouble                         | [x]    | [x]    |
-| Day  7    | No Space Left On Device                | [x]    | [x]    |
-| Day  8    | Treetop Tree House                     | [x]    | [x]    |
-| Day  9    | Rope Bridge                            | [x]    | [x]    |
-| Day 10    | Cathode-Ray Tube                       | [x]    | [x]    |
-| Day 11    |                                        | [ ]    | [ ]    |
-| Day 12    | Hill Climbing Algorithm                | [ ]    | [ ]    |
-| Day 13    |                                        | [ ]    | [ ]    |
-| Day 14    |                                        | [ ]    | [ ]    |
-| Day 15    |                                        | [ ]    | [ ]    |
-| Day 16    |                                        | [ ]    | [ ]    |
-| Day 17    |                                        | [ ]    | [ ]    |
-| Day 18    | Boiling Boulders                       | [x]    | [x]    |
-| Day 19    |                                        | [ ]    | [ ]    |
-| Day 20    |                                        | [ ]    | [ ]    |
-| Day 21    |                                        | [ ]    | [ ]    |
-| Day 22    |                                        | [ ]    | [ ]    |
-| Day 23    |                                        | [ ]    | [ ]    |
-| Day 24    |                                        | [ ]    | [ ]    |
-| Day 25    |                                        | [ ]    | [ ]    |
+| Day    | Name                    | Part 1 | Part 2 |
+|--------|-------------------------|--------|--------|
+| Day  1 | Calorie Counting        | [x]    | [x]    |
+| Day  2 | Rock Paper Scissors     | [x]    | [x]    |
+| Day  3 | Rucksack Reorganization | [x]    | [x]    |
+| Day  4 | Camp Cleanup            | [x]    | [x]    |
+| Day  5 | Supply Stacks           | [x]    | [x]    |
+| Day  6 | Tuning Trouble          | [x]    | [x]    |
+| Day  7 | No Space Left On Device | [x]    | [x]    |
+| Day  8 | Treetop Tree House      | [x]    | [x]    |
+| Day  9 | Rope Bridge             | [x]    | [x]    |
+| Day 10 | Cathode-Ray Tube        | [x]    | [x]    |
+| Day 11 |                         | [ ]    | [ ]    |
+| Day 12 | Hill Climbing Algorithm | [ ]    | [ ]    |
+| Day 13 |                         | [ ]    | [ ]    |
+| Day 14 |                         | [ ]    | [ ]    |
+| Day 15 |                         | [ ]    | [ ]    |
+| Day 16 |                         | [ ]    | [ ]    |
+| Day 17 |                         | [ ]    | [ ]    |
+| Day 18 | Boiling Boulders        | [x]    | [x]    |
+| Day 19 |                         | [ ]    | [ ]    |
+| Day 20 |                         | [ ]    | [ ]    |
+| Day 21 |                         | [ ]    | [ ]    |
+| Day 22 |                         | [ ]    | [ ]    |
+| Day 23 |                         | [ ]    | [ ]    |
+| Day 24 |                         | [ ]    | [ ]    |
+| Day 25 |                         | [ ]    | [ ]    |
 
 ## 2021
 
@@ -78,33 +110,33 @@
 >
 > Before you know it, you're inside a submarine the Elves keep ready for situations like this. It's covered in Christmas lights (because of course it is), and it even has an experimental antenna that should be able to track the keys if you can boost its signal strength high enough; there's a little meter that indicates the antenna's signal strength by displaying 0-50 stars.
 
-| Day       | Name                                   | Part 1 | Part 2 |
-| --------- | -------------------------------------- | ------ | ------ |
-| Day  1    | Sonar Sweep                            | [x]    | [x]    |
-| Day  2    | Dive!                                  | [x]    | [x]    |
-| Day  3    | Binary Diagnostic                      | [x]    | [ ]    |
-| Day  4    |                                        | [ ]    | [ ]    |
-| Day  5    |                                        | [ ]    | [ ]    |
-| Day  6    |                                        | [ ]    | [ ]    |
-| Day  7    |                                        | [ ]    | [ ]    |
-| Day  8    |                                        | [ ]    | [ ]    |
-| Day  9    |                                        | [ ]    | [ ]    |
-| Day 10    |                                        | [ ]    | [ ]    |
-| Day 11    |                                        | [ ]    | [ ]    |
-| Day 12    |                                        | [ ]    | [ ]    |
-| Day 13    |                                        | [ ]    | [ ]    |
-| Day 14    |                                        | [ ]    | [ ]    |
-| Day 15    |                                        | [ ]    | [ ]    |
-| Day 16    |                                        | [ ]    | [ ]    |
-| Day 17    |                                        | [ ]    | [ ]    |
-| Day 18    |                                        | [ ]    | [ ]    |
-| Day 19    |                                        | [ ]    | [ ]    |
-| Day 20    |                                        | [ ]    | [ ]    |
-| Day 21    |                                        | [ ]    | [ ]    |
-| Day 22    |                                        | [ ]    | [ ]    |
-| Day 23    |                                        | [ ]    | [ ]    |
-| Day 24    |                                        | [ ]    | [ ]    |
-| Day 25    |                                        | [ ]    | [ ]    |
+| Day    | Name              | Part 1 | Part 2 |
+|--------|-------------------|--------|--------|
+| Day  1 | Sonar Sweep       | [x]    | [x]    |
+| Day  2 | Dive!             | [x]    | [x]    |
+| Day  3 | Binary Diagnostic | [x]    | [ ]    |
+| Day  4 |                   | [ ]    | [ ]    |
+| Day  5 |                   | [ ]    | [ ]    |
+| Day  6 |                   | [ ]    | [ ]    |
+| Day  7 |                   | [ ]    | [ ]    |
+| Day  8 |                   | [ ]    | [ ]    |
+| Day  9 |                   | [ ]    | [ ]    |
+| Day 10 |                   | [ ]    | [ ]    |
+| Day 11 |                   | [ ]    | [ ]    |
+| Day 12 |                   | [ ]    | [ ]    |
+| Day 13 |                   | [ ]    | [ ]    |
+| Day 14 |                   | [ ]    | [ ]    |
+| Day 15 |                   | [ ]    | [ ]    |
+| Day 16 |                   | [ ]    | [ ]    |
+| Day 17 |                   | [ ]    | [ ]    |
+| Day 18 |                   | [ ]    | [ ]    |
+| Day 19 |                   | [ ]    | [ ]    |
+| Day 20 |                   | [ ]    | [ ]    |
+| Day 21 |                   | [ ]    | [ ]    |
+| Day 22 |                   | [ ]    | [ ]    |
+| Day 23 |                   | [ ]    | [ ]    |
+| Day 24 |                   | [ ]    | [ ]    |
+| Day 25 |                   | [ ]    | [ ]    |
 
 ## 2020
 
@@ -114,33 +146,33 @@
 >
 > The tropical island has its own currency and is entirely cash-only. The gold coins used there have a little picture of a starfish; the locals just call them stars. None of the currency exchanges seem to have heard of them, but somehow, you'll need to find fifty of these coins by the time you arrive so you can pay the deposit on your room.
 
-| Day       | Name                                   | Part 1 | Part 2 |
-| --------- | -------------------------------------- | ------ | ------ |
-| Day  1    | Report Repair                          | [x]    | [x]    |
-| Day  2    | Password Philosophy                    | [x]    | [x]    |
-| Day  3    | Toboggan Trajectory                    | [ ]    | [ ]    |
-| Day  4    | Passport Processing                    | [x]    | [x]    |
-| Day  5    | Binary Boarding                        | [x]    | [x]    |
-| Day  6    | Custom Customs                         | [x]    | [x]    |
-| Day  7    | Handy Haversacks                       | [ ]    | [ ]    |
-| Day  8    |                                        | [ ]    | [ ]    |
-| Day  9    |                                        | [ ]    | [ ]    |
-| Day 10    |                                        | [ ]    | [ ]    |
-| Day 11    |                                        | [ ]    | [ ]    |
-| Day 12    |                                        | [ ]    | [ ]    |
-| Day 13    |                                        | [ ]    | [ ]    |
-| Day 14    |                                        | [ ]    | [ ]    |
-| Day 15    |                                        | [ ]    | [ ]    |
-| Day 16    |                                        | [ ]    | [ ]    |
-| Day 17    |                                        | [ ]    | [ ]    |
-| Day 18    |                                        | [ ]    | [ ]    |
-| Day 19    |                                        | [ ]    | [ ]    |
-| Day 20    |                                        | [ ]    | [ ]    |
-| Day 21    |                                        | [ ]    | [ ]    |
-| Day 22    |                                        | [ ]    | [ ]    |
-| Day 23    |                                        | [ ]    | [ ]    |
-| Day 24    |                                        | [ ]    | [ ]    |
-| Day 25    |                                        | [ ]    | [ ]    |
+| Day    | Name                | Part 1 | Part 2 |
+|--------|---------------------|--------|--------|
+| Day  1 | Report Repair       | [x]    | [x]    |
+| Day  2 | Password Philosophy | [x]    | [x]    |
+| Day  3 | Toboggan Trajectory | [ ]    | [ ]    |
+| Day  4 | Passport Processing | [x]    | [x]    |
+| Day  5 | Binary Boarding     | [x]    | [x]    |
+| Day  6 | Custom Customs      | [x]    | [x]    |
+| Day  7 | Handy Haversacks    | [ ]    | [ ]    |
+| Day  8 |                     | [ ]    | [ ]    |
+| Day  9 |                     | [ ]    | [ ]    |
+| Day 10 |                     | [ ]    | [ ]    |
+| Day 11 |                     | [ ]    | [ ]    |
+| Day 12 |                     | [ ]    | [ ]    |
+| Day 13 |                     | [ ]    | [ ]    |
+| Day 14 |                     | [ ]    | [ ]    |
+| Day 15 |                     | [ ]    | [ ]    |
+| Day 16 |                     | [ ]    | [ ]    |
+| Day 17 |                     | [ ]    | [ ]    |
+| Day 18 |                     | [ ]    | [ ]    |
+| Day 19 |                     | [ ]    | [ ]    |
+| Day 20 |                     | [ ]    | [ ]    |
+| Day 21 |                     | [ ]    | [ ]    |
+| Day 22 |                     | [ ]    | [ ]    |
+| Day 23 |                     | [ ]    | [ ]    |
+| Day 24 |                     | [ ]    | [ ]    |
+| Day 25 |                     | [ ]    | [ ]    |
 
 ## 2019
 
@@ -148,33 +180,33 @@
 
 > Santa has become stranded at the edge of the Solar System while delivering presents to other planets! To accurately calculate his position in space, safely align his warp drive, and return to Earth in time to save Christmas, he needs you to bring him measurements from fifty stars.
 
-| Day       | Name                                   | Part 1 | Part 2 |
-| --------- | -------------------------------------- | ------ | ------ |
-| Day  1    | The Tyranny of the Rocket Equation     | [x]    | [x]    |
-| Day  2    | 1202 Program Alarm                     | [x]    | [x]    |
-| Day  3    |                                        | [ ]    | [ ]    |
-| Day  4    |                                        | [ ]    | [ ]    |
-| Day  5    | Sunny with a Chance of Asteroids       | [x]    | [x]    |
-| Day  6    |                                        | [ ]    | [ ]    |
-| Day  7    |                                        | [ ]    | [ ]    |
-| Day  8    |                                        | [ ]    | [ ]    |
-| Day  9    |                                        | [ ]    | [ ]    |
-| Day 10    |                                        | [ ]    | [ ]    |
-| Day 11    |                                        | [ ]    | [ ]    |
-| Day 12    |                                        | [ ]    | [ ]    |
-| Day 13    |                                        | [ ]    | [ ]    |
-| Day 14    |                                        | [ ]    | [ ]    |
-| Day 15    |                                        | [ ]    | [ ]    |
-| Day 16    |                                        | [ ]    | [ ]    |
-| Day 17    |                                        | [ ]    | [ ]    |
-| Day 18    |                                        | [ ]    | [ ]    |
-| Day 19    |                                        | [ ]    | [ ]    |
-| Day 20    |                                        | [ ]    | [ ]    |
-| Day 21    |                                        | [ ]    | [ ]    |
-| Day 22    |                                        | [ ]    | [ ]    |
-| Day 23    |                                        | [ ]    | [ ]    |
-| Day 24    |                                        | [ ]    | [ ]    |
-| Day 25    |                                        | [ ]    | [ ]    |
+| Day    | Name                               | Part 1 | Part 2 |
+|--------|------------------------------------|--------|--------|
+| Day  1 | The Tyranny of the Rocket Equation | [x]    | [x]    |
+| Day  2 | 1202 Program Alarm                 | [x]    | [x]    |
+| Day  3 |                                    | [ ]    | [ ]    |
+| Day  4 |                                    | [ ]    | [ ]    |
+| Day  5 | Sunny with a Chance of Asteroids   | [x]    | [x]    |
+| Day  6 |                                    | [ ]    | [ ]    |
+| Day  7 |                                    | [ ]    | [ ]    |
+| Day  8 |                                    | [ ]    | [ ]    |
+| Day  9 |                                    | [ ]    | [ ]    |
+| Day 10 |                                    | [ ]    | [ ]    |
+| Day 11 |                                    | [ ]    | [ ]    |
+| Day 12 |                                    | [ ]    | [ ]    |
+| Day 13 |                                    | [ ]    | [ ]    |
+| Day 14 |                                    | [ ]    | [ ]    |
+| Day 15 |                                    | [ ]    | [ ]    |
+| Day 16 |                                    | [ ]    | [ ]    |
+| Day 17 |                                    | [ ]    | [ ]    |
+| Day 18 |                                    | [ ]    | [ ]    |
+| Day 19 |                                    | [ ]    | [ ]    |
+| Day 20 |                                    | [ ]    | [ ]    |
+| Day 21 |                                    | [ ]    | [ ]    |
+| Day 22 |                                    | [ ]    | [ ]    |
+| Day 23 |                                    | [ ]    | [ ]    |
+| Day 24 |                                    | [ ]    | [ ]    |
+| Day 25 |                                    | [ ]    | [ ]    |
 
 ## 2018
 
@@ -188,33 +220,33 @@ Not started
 >
 > When your eyes can focus again, everything seems a lot more pixelated than before. She must have sent you inside the computer! You check the system clock: 25 milliseconds until midnight. With that much time, you should be able to collect all fifty stars by December 25th.
 
-| Day       | Name                                   | Part 1 | Part 2 |
-| --------- | -------------------------------------- | ------ | ------ |
-| Day  1    | Inverse Captcha                        | [x]    | [x]    |
-| Day  2    |                                        | [ ]    | [ ]    |
-| Day  3    |                                        | [ ]    | [ ]    |
-| Day  4    |                                        | [ ]    | [ ]    |
-| Day  5    |                                        | [ ]    | [ ]    |
-| Day  6    |                                        | [ ]    | [ ]    |
-| Day  7    |                                        | [ ]    | [ ]    |
-| Day  8    |                                        | [ ]    | [ ]    |
-| Day  9    |                                        | [ ]    | [ ]    |
-| Day 10    |                                        | [ ]    | [ ]    |
-| Day 11    |                                        | [ ]    | [ ]    |
-| Day 12    |                                        | [ ]    | [ ]    |
-| Day 13    |                                        | [ ]    | [ ]    |
-| Day 14    |                                        | [ ]    | [ ]    |
-| Day 15    |                                        | [ ]    | [ ]    |
-| Day 16    |                                        | [ ]    | [ ]    |
-| Day 17    |                                        | [ ]    | [ ]    |
-| Day 18    |                                        | [ ]    | [ ]    |
-| Day 19    |                                        | [ ]    | [ ]    |
-| Day 20    |                                        | [ ]    | [ ]    |
-| Day 21    |                                        | [ ]    | [ ]    |
-| Day 22    |                                        | [ ]    | [ ]    |
-| Day 23    |                                        | [ ]    | [ ]    |
-| Day 24    |                                        | [ ]    | [ ]    |
-| Day 25    |                                        | [ ]    | [ ]    |
+| Day    | Name            | Part 1 | Part 2 |
+|--------|-----------------|--------|--------|
+| Day  1 | Inverse Captcha | [x]    | [x]    |
+| Day  2 |                 | [ ]    | [ ]    |
+| Day  3 |                 | [ ]    | [ ]    |
+| Day  4 |                 | [ ]    | [ ]    |
+| Day  5 |                 | [ ]    | [ ]    |
+| Day  6 |                 | [ ]    | [ ]    |
+| Day  7 |                 | [ ]    | [ ]    |
+| Day  8 |                 | [ ]    | [ ]    |
+| Day  9 |                 | [ ]    | [ ]    |
+| Day 10 |                 | [ ]    | [ ]    |
+| Day 11 |                 | [ ]    | [ ]    |
+| Day 12 |                 | [ ]    | [ ]    |
+| Day 13 |                 | [ ]    | [ ]    |
+| Day 14 |                 | [ ]    | [ ]    |
+| Day 15 |                 | [ ]    | [ ]    |
+| Day 16 |                 | [ ]    | [ ]    |
+| Day 17 |                 | [ ]    | [ ]    |
+| Day 18 |                 | [ ]    | [ ]    |
+| Day 19 |                 | [ ]    | [ ]    |
+| Day 20 |                 | [ ]    | [ ]    |
+| Day 21 |                 | [ ]    | [ ]    |
+| Day 22 |                 | [ ]    | [ ]    |
+| Day 23 |                 | [ ]    | [ ]    |
+| Day 24 |                 | [ ]    | [ ]    |
+| Day 25 |                 | [ ]    | [ ]    |
 
 ## 2016
 
@@ -222,33 +254,33 @@ Not started
 
 > Santa's sleigh uses a very high-precision clock to guide its movements, and the clock's oscillator is regulated by stars. Unfortunately, the stars have been stolen... by the Easter Bunny. To save Christmas, Santa needs you to retrieve all fifty stars by December 25th.
 
-| Day       | Name                                   | Part 1 | Part 2 |
-| --------- | -------------------------------------- | ------ | ------ |
-| Day  1    | No Time for a Taxicab                  | [ ]    | [ ]    |
-| Day  2    |                                        | [ ]    | [ ]    |
-| Day  3    |                                        | [ ]    | [ ]    |
-| Day  4    |                                        | [ ]    | [ ]    |
-| Day  5    |                                        | [ ]    | [ ]    |
-| Day  6    |                                        | [ ]    | [ ]    |
-| Day  7    |                                        | [ ]    | [ ]    |
-| Day  8    |                                        | [ ]    | [ ]    |
-| Day  9    |                                        | [ ]    | [ ]    |
-| Day 10    |                                        | [ ]    | [ ]    |
-| Day 11    |                                        | [ ]    | [ ]    |
-| Day 12    |                                        | [ ]    | [ ]    |
-| Day 13    |                                        | [ ]    | [ ]    |
-| Day 14    |                                        | [ ]    | [ ]    |
-| Day 15    |                                        | [ ]    | [ ]    |
-| Day 16    |                                        | [ ]    | [ ]    |
-| Day 17    |                                        | [ ]    | [ ]    |
-| Day 18    |                                        | [ ]    | [ ]    |
-| Day 19    |                                        | [ ]    | [ ]    |
-| Day 20    |                                        | [ ]    | [ ]    |
-| Day 21    |                                        | [ ]    | [ ]    |
-| Day 22    |                                        | [ ]    | [ ]    |
-| Day 23    |                                        | [ ]    | [ ]    |
-| Day 24    |                                        | [ ]    | [ ]    |
-| Day 25    |                                        | [ ]    | [ ]    |
+| Day    | Name                  | Part 1 | Part 2 |
+|--------|-----------------------|--------|--------|
+| Day  1 | No Time for a Taxicab | [ ]    | [ ]    |
+| Day  2 |                       | [ ]    | [ ]    |
+| Day  3 |                       | [ ]    | [ ]    |
+| Day  4 |                       | [ ]    | [ ]    |
+| Day  5 |                       | [ ]    | [ ]    |
+| Day  6 |                       | [ ]    | [ ]    |
+| Day  7 |                       | [ ]    | [ ]    |
+| Day  8 |                       | [ ]    | [ ]    |
+| Day  9 |                       | [ ]    | [ ]    |
+| Day 10 |                       | [ ]    | [ ]    |
+| Day 11 |                       | [ ]    | [ ]    |
+| Day 12 |                       | [ ]    | [ ]    |
+| Day 13 |                       | [ ]    | [ ]    |
+| Day 14 |                       | [ ]    | [ ]    |
+| Day 15 |                       | [ ]    | [ ]    |
+| Day 16 |                       | [ ]    | [ ]    |
+| Day 17 |                       | [ ]    | [ ]    |
+| Day 18 |                       | [ ]    | [ ]    |
+| Day 19 |                       | [ ]    | [ ]    |
+| Day 20 |                       | [ ]    | [ ]    |
+| Day 21 |                       | [ ]    | [ ]    |
+| Day 22 |                       | [ ]    | [ ]    |
+| Day 23 |                       | [ ]    | [ ]    |
+| Day 24 |                       | [ ]    | [ ]    |
+| Day 25 |                       | [ ]    | [ ]    |
 
 ## 2015
 
@@ -256,30 +288,30 @@ Not started
 
 > Santa was hoping for a white Christmas, but his weather machine's "snow" function is powered by stars, and he's fresh out! To save Christmas, he needs you to collect fifty stars by December 25th.
 
-| Day       | Name                                   | Part 1 | Part 2 |
-| --------- | -------------------------------------- | ------ | ------ |
-| Day  1    | Not Quite Lisp                         | [x]    | [x]    |
-| Day  2    | I Was Told There Would Be No Math      | [x]    | [x]    |
-| Day  3    | Perfectly Spherical Houses in a Vacuum | [x]    | [x]    |
-| Day  4    | The Ideal Stocking Stuffer             | [x]    | [x]    |
-| Day  5    | Doesn't He Have Intern-Elves For This? | [x]    | [ ]    |
-| Day  6    | Probably a Fire Hazard                 | [x]    | [x]    |
-| Day  7    | Some Assembly Required                 | [x]    | [x]    |
-| Day  8    | Matchsticks                            | [ ]    | [ ]    |
-| Day  9    | All in a Single Night                  | [x]    | [x]    |
-| Day 10    | Elves Look, Elves Say                  | [ ]    | [ ]    |
-| Day 11    | Corporate Policy                       | [ ]    | [ ]    |
-| Day 12    | JSAbacusFramework.io                   | [x]    | [x]    |
-| Day 13    | Knights of the Dinner Table            | [ ]    | [ ]    |
-| Day 14    | Reindeer Olympics                      | [x]    | [x]    |
-| Day 15    | Science for Hungry People              | [ ]    | [ ]    |
-| Day 16    | Aunt Sue                               | [x]    | [x]    |
-| Day 17    | No Such Thing as Too Much              | [x]    | [x]    |
-| Day 18    | Like a GIF For Your Yard               | [x]    | [x]    |
-| Day 19    | Medicine for Rudolph                   | [x]    | [x]    |
-| Day 20    | Infinite Elves and Infinite Houses     | [x]    | [x]    |
-| Day 21    | RPG Simulator 20XX                     | [ ]    | [ ]    |
-| Day 22    | Wizard Simulator 20XX                  | [ ]    | [ ]    |
-| Day 23    | Opening the Turing Lock                | [ ]    | [ ]    |
-| Day 24    | It Hangs in the Balance                | [ ]    | [ ]    |
-| Day 25    | Let It Snow                            | [ ]    | [ ]    |
+| Day    | Name                                   | Part 1 | Part 2 |
+|--------|----------------------------------------|--------|--------|
+| Day  1 | Not Quite Lisp                         | [x]    | [x]    |
+| Day  2 | I Was Told There Would Be No Math      | [x]    | [x]    |
+| Day  3 | Perfectly Spherical Houses in a Vacuum | [x]    | [x]    |
+| Day  4 | The Ideal Stocking Stuffer             | [x]    | [x]    |
+| Day  5 | Doesn't He Have Intern-Elves For This? | [x]    | [ ]    |
+| Day  6 | Probably a Fire Hazard                 | [x]    | [x]    |
+| Day  7 | Some Assembly Required                 | [x]    | [x]    |
+| Day  8 | Matchsticks                            | [ ]    | [ ]    |
+| Day  9 | All in a Single Night                  | [x]    | [x]    |
+| Day 10 | Elves Look, Elves Say                  | [ ]    | [ ]    |
+| Day 11 | Corporate Policy                       | [ ]    | [ ]    |
+| Day 12 | JSAbacusFramework.io                   | [x]    | [x]    |
+| Day 13 | Knights of the Dinner Table            | [ ]    | [ ]    |
+| Day 14 | Reindeer Olympics                      | [x]    | [x]    |
+| Day 15 | Science for Hungry People              | [ ]    | [ ]    |
+| Day 16 | Aunt Sue                               | [x]    | [x]    |
+| Day 17 | No Such Thing as Too Much              | [x]    | [x]    |
+| Day 18 | Like a GIF For Your Yard               | [x]    | [x]    |
+| Day 19 | Medicine for Rudolph                   | [x]    | [x]    |
+| Day 20 | Infinite Elves and Infinite Houses     | [x]    | [x]    |
+| Day 21 | RPG Simulator 20XX                     | [ ]    | [ ]    |
+| Day 22 | Wizard Simulator 20XX                  | [ ]    | [ ]    |
+| Day 23 | Opening the Turing Lock                | [ ]    | [ ]    |
+| Day 24 | It Hangs in the Balance                | [ ]    | [ ]    |
+| Day 25 | Let It Snow                            | [ ]    | [ ]    |
