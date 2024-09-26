@@ -1,0 +1,31 @@
+name: Continuous Integration
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - "v*"
+  pull_request:
+
+jobs:
+  build:
+    name: Build and Test
+    runs-on: ${{ matrix.OS }}
+    strategy:
+      matrix:
+        OS:
+          - ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: scala-cli-setup-action
+        uses: VirtusLab/scala-cli-setup@v1.5.0
+
+      - name: Compile
+        run: scala-cli compile advent-of-code-scala
+
+      - name: Run Tests
+        run: scala-cli test advent-of-code-scala
