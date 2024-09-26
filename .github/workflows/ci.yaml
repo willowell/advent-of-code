@@ -1,4 +1,10 @@
-name: Continuous Integration
+# This GitHub Workflow performs continuous integration on my Advent of Code project,
+# where each job handles a separate language sub-project.
+#
+# Haskell sub-project is currently WIP.
+#
+
+name: "Continuous Integration"
 on:
   push:
     branches:
@@ -8,24 +14,31 @@ on:
   pull_request:
 
 jobs:
-  build:
-    name: Build and Test
-    runs-on: ${{ matrix.OS }}
+  scala-build-and-test:
+    name: "Scala - Build and Test"
     strategy:
       matrix:
-        OS:
+        os:
           - ubuntu-latest
+        jvm:
+          - "temurin:21"
+    runs-on: ${{ matrix.os }}
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
+      - name: "Checkout repository"
+        uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 1
 
-      - name: scala-cli-setup-action
+      - name: "Setup Scala-CLI project using VirtusLab action"
         uses: VirtusLab/scala-cli-setup@v1.5.0
+        with:
+          jvm: ${{ matrix.jvm }}
 
-      - name: Compile
+      - name: "Compile Scala-CLI project"
         run: scala-cli compile advent-of-code-scala
 
-      - name: Run Tests
+      - name: "Run Tests"
         run: scala-cli test advent-of-code-scala
+
+      - name: "Sanity check by running solution for Day 1 of 2015"
+        run: scala-cli run advent-of-code-scala --main-class solutions.y2015.day01.run
