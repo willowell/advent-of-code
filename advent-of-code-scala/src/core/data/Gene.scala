@@ -172,7 +172,7 @@ object Gene {
 ///==================================================================================================================///
 
 object Parsers {
-  val entry = (Gene.p <* eof)
+  val entry = (Gene.p <* P.eof)
   
   val nucleotide = Nucleotide.p
   val codon = Codon.p
