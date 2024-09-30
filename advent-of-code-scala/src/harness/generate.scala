@@ -6,6 +6,10 @@ import harness.templates.{compileDayImplTemplate, compileDayTestTemplate, compil
 
 val wd = os.pwd / "src" / "solutions"
 
+/**
+  * Create directory for `year`'s solutions under `/src/solutions/`.
+  * Initializes directory with Scala package for year supplying implicit `year` value.
+  */
 def createYearDir(year: Year): Unit = {
   val yearFragment = f"y$year%04d"
   val yearDir = wd / yearFragment
@@ -24,6 +28,7 @@ def createYearDir(year: Year): Unit = {
   }
 }
 
+/** Create day's solution implementation and test files in `year` directory. */
 def createDayFiles(year: Year, day: Day): Unit = {
   val yearFragment = f"y$year%04d"
   val yearDir = wd / yearFragment

@@ -5,7 +5,7 @@ import com.monovore.decline.{time as _, *}
 import com.monovore.decline.effect.CommandIOApp
 
 /** ## Simple Run Part (IO)
-  * 
+  *
   *
   * @param runPart
   * @param year ***implicit*** Current year.
@@ -20,6 +20,18 @@ def simpleRunPartIO[A](runPart: String => A)(using year: Year, day: Day): IO[Uni
 } yield (())
 
 
+/** ## Advent of Code Day Runner (IO)
+  *
+  * Extend this class and supply `part1` and `part2` to create an entrypoint for the day's solution.
+  * See `/solutions/y0000/day01.scala` for complete usage example.
+  *
+  * Solutions operate as pure functions inside `IO`.
+  *
+  * @param part1 Part 1 solution function.
+  * @param part2 Part 2 solution function.
+  * @param year ***implicit*** Current year.
+  * @param day ***implicit*** Current day.
+  */
 open class AocDayRunnerIO[A, B](
   part1: String => A,
   part2: String => B

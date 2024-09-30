@@ -1,8 +1,8 @@
-/* 
+/*
  * Copyright 2021 bbstilson <https://github.com/bbstilson>.
  * The source code below is part of [Advent of Code Data](https://github.com/bbstilson/advent-of-code-data) and is
  * licensed under the MIT license. For the full license text, please visit https://opensource.org/license/mit/.
- * 
+ *
  * 2023 Dec 01 - Modified by William Howell
  */
 package harness
@@ -12,7 +12,7 @@ import scala.io.Source
 import com.monovore.decline.CommandApp
 
 /** ## Load input file for the day from resources directory.
-  * 
+  *
   *
   * @param year ***implicit*** Current year.
   * @param day ***implicit*** Current day.
@@ -28,7 +28,7 @@ def loadInput()(using year: Year, day: Day): String = {
 
 
 /** ## Download input for the day.
-  * 
+  *
   *
   * @param year ***implicit*** Current year.
   * @param day ***implicit*** Current day.
@@ -38,7 +38,7 @@ def downloadInput()(using year: Year, day: Day): Unit = ???
 
 
 /** ## Simple Run Part
-  * 
+  *
   *
   * @param runPart
   * @param year ***implicit*** Current year.
@@ -55,7 +55,9 @@ def simpleRunPart[A](runPart: String => A)(using year: Year, day: Day): Unit = {
 }
 
 /** ## Advent of Code Day Runner
-  * 
+  *
+  * Extend this class and supply `part1` and `part2` to create an entrypoint for the day's solution.
+  * See `/solutions/y0000/day01.scala` for complete usage example.
   *
   * @param part1 Part 1 solution function.
   * @param part2 Part 2 solution function.
