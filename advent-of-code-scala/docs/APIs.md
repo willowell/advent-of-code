@@ -1,7 +1,7 @@
 # API Documentation
 
-* [Scala 3.x Standard Library](https://scala-lang.org/api/3.x/)
-* [Java 20 API Docs](https://docs.oracle.com/en/java/javase/20/docs/api/index.html)
+* [Scala 3.x Standard Library](https://scala-lang.org/api/3.3_LTS/)
+* [Java 21 API Docs](https://docs.oracle.com/en/java/javase/21/docs/api/index.html)
 
 ## Guides
 
@@ -15,7 +15,7 @@
 
 ## Tooling
 
-* [Scala CLI](https://scala-cli.virtuslab.org/docs/overview)
+* [Scala-CLI](https://scala-cli.virtuslab.org/docs/overview)
 
 ## General
 
