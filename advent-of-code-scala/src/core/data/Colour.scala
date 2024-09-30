@@ -14,8 +14,24 @@ import spire.math.UByte
 
 case class RGB(r: UByte, g: UByte, b: UByte)
 
-extension (self: String) def toUByteFromHex: UByte = UByte(JShort.parseShort(self, 16))
+case class ARGB(a: UByte, r: UByte, g: UByte, b: UByte)
 
+object RGB {
+  object Parsers {
+    val hexadecimalRGB: Parsley[RGB] = for {
+      _ <- char('#')
+      r <- exactly(2, hexDigit).map { xs => xs.mkString.toUByteFromHex }
+      g <- exactly(2, hexDigit).map { xs => xs.mkString.toUByteFromHex }
+      b <- exactly(2, hexDigit).map { xs => xs.mkString.toUByteFromHex }
+    } yield RGB(r, g, b)
+  }
+}
+
+extension (self: String) {
+  def toUByteFromHex: UByte = UByte(JShort.parseShort(self, 16))
+}
+
+/** deperecated: replace with RGB.Parsers.hexadecimalRGB */
 def pHexRgb: Parsley[RGB] = for {
   _ <- char('#')
   r <- exactly(2, hexDigit).map { xs => xs.mkString.toUByteFromHex }
