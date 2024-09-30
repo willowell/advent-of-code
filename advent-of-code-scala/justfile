@@ -1,0 +1,14 @@
+default:
+  just --list
+
+run year day:
+  @scala-cli run . --main-class solutions.y{{year}}.day{{day}}.run
+
+runp year day part:
+  @scala-cli run . --main-class solutions.y{{year}}.day{{day}}.run -- --part {{part}}
+
+repl:
+  @scala-cli repl .
+
+test:
+  @scala-cli test .

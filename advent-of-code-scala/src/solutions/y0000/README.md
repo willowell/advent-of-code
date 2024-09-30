@@ -18,6 +18,14 @@ By default, `AocDayRunner` runs all parts, but you can pass a part to the CLI li
 scala-cli run . --main-class solutions.y0000.day01.run -- --part a
 ```
 
+### Shorthand with `just`
+
+Alternatively, you can run the day's solution using `just` like so:
+
+```
+just run 0000 01
+```
+
 ## TDD
 
 This project is setup to allow test suites right next to the implementation files, so you can test against the examples as close as possible to the implementation.

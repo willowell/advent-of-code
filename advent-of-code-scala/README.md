@@ -60,6 +60,19 @@ You can use Scala-CLI to find available main classes in this project. Just run `
 
 Scala-CLI will then print out a list of available main classes, along with an example and more info on how to run them.
 
+### Use `just` as shorthand
+
+`scala-cli run --main-class solutions.y2015.day01.run -- --part a` is pretty long, right?
+
+`just runp 2015 01 a`!
+
+You can use [`just`](https://github.com/casey/just) for shorthand:
+
+* `just run 2015 01` -> `scala-cli run --main-class solutions.y2015.day01.run`
+* `just run 2015 01 a` -> `scala-cli run --main-class solutions.y2015.day01.run -- --part a`
+
+Take a look at what's available in the [`justfile`](./justfile) or run `just --list`!
+
 ## How to interact with this project through the Scala REPL
 
 You can explore this whole project using the Scala REPL. Just run `scala-cli repl .` in the root directory - you will then have a Scala REPL in the context of this project.
