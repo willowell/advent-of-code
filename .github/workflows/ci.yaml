@@ -37,8 +37,8 @@ jobs:
       - name: "Compile Scala-CLI project"
         run: scala-cli compile advent-of-code-scala
 
-      - name: "Run Tests"
-        run: scala-cli test advent-of-code-scala
+      - name: "Sanity check by testing solution for Day 1 of 2015"
+        run: scala-cli test advent-of-code-scala --test-only 'Y2015_Day01_Suite'
 
-      - name: "Sanity check by running solution for Day 1 of 2015"
-        run: scala-cli run advent-of-code-scala --main-class solutions.y2015.day01.run
+      - name: "Run all tests"
+        run: scala-cli test advent-of-code-scala
