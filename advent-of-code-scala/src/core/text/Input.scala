@@ -61,5 +61,4 @@ def unsafePrompt[A: Read](msg: String, validator: A => Boolean)(using a: Input[A
 }
 
 
-def yesOrNo(msg: String): Boolean =
-  prompt(msg ++ " (y/n): ", (x) => true)
+def yesOrNo(msg: String): Boolean = prompt(msg ++ " (y/n): ", (x) => true)
