@@ -21,13 +21,21 @@ extension (s: String) {
 
 val lexer: Lexer = Lexer(LexicalDesc.plain)
 
-val int32: Parsley[Int] = lexer.nonlexeme.numeric.integer.decimal32
+/** Parse an `Int` */
+val int32: Parsley[Int] = lexer.nonlexeme.integer.decimal32
 
-val nat32: Parsley[?] = lexer.nonlexeme.numeric.natural.decimal32
+/** Parse a `Long` */
+val int64: Parsley[Long] = lexer.nonlexeme.integer.decimal64
 
-val hexInt32: Parsley[Int] = lexer.nonlexeme.numeric.integer.hexadecimal32
+/** Parse an unsigned `Int`, which can fit into `Long`.  */
+val nat32: Parsley[Long] = lexer.nonlexeme.natural.decimal32
 
-val double: Parsley[Double] = lexer.nonlexeme.numeric.floating.doubleRounded
+/** Parse an unsigned `Long` - I have no idea if this works? */
+val nat64: Parsley[Long] = lexer.nonlexeme.natural.decimal64
+
+val hexInt32: Parsley[Int] = lexer.nonlexeme.integer.hexadecimal32
+
+val double: Parsley[Double] = lexer.nonlexeme.floating.doubleRounded
 
 def isSpecialCharacter(c: Char): Boolean = (c: @switch) match {
   case (
@@ -48,35 +56,62 @@ def isEnglishVowel(c: Char): Boolean = (c: @switch) match {
   case _ => false
 }
 
-
+/** Parse an English vowel letter. (a, e, i, o, u) */
 val englishVowel: Parsley[Char] = satisfy { isEnglishVowel } ? "English vowel (aeiou)"
 
-val specialCharacter: Parsley[Char] = satisfy { isSpecialCharacter } ? "digit"
+/** Parse a special character. */
+val specialCharacter: Parsley[Char] = satisfy { isSpecialCharacter } ? "special character"
 
+/** Parse a line of alphanumeric text, including whitespace. */
 val fullLine: Parsley[String] = stringOfSome(letterOrDigit <|> space)
 
-/** Alphanumeric string parser.
-  * 
-  */
+/** Alphanumeric string parser. Same as `fullLine` but does not parse whitespace. */
 val anStr: Parsley[String] = stringOfSome(letterOrDigit)
 
+/** Parse a single ASCII character. */
 val asciiChar: Parsley[Char] = letterOrDigit <|> specialCharacter <|> space
 
+/** Parse a string of ASCII characters. */
 val asciiStr: Parsley[String] = stringOfSome(letterOrDigit <|> specialCharacter)
 
+/** Parse a word, defined as a string of only letters. */
 val word: Parsley[String] = stringOfSome(letter)
 
+/** Parse a comma character. */
 val comma: Parsley[Char] = char(',')
 
+/** Parse a colon character. */
 val colon: Parsley[Char] = char(':')
 
+/** Parse a dash / hyphen character. */
 val dash: Parsley[Char] = char('-')
 
+/** Parse a dollar sign character. */
 val dollar: Parsley[Char] = char('$')
 
+//====================================================================================================================//
+// COMBINATORS                                                                                                        //
+//====================================================================================================================//
 
+/** Parse one or more occurences of `p`, separated and optionally ended by an EOL. */
 def sepByEol1[A](p: Parsley[A]) = sepEndBy1(p, endOfLine)
 
+/**
+ * Parse groups of one or more occurences of `p`, separated and optionally ended by an EOL,
+ * where each group is also separated and optionally ended by an EOL.
+ *
+ * Meant for input like
+ *
+ * {{{
+ * """
+ * 1234
+ * 5678
+ *
+ * 1234
+ * 5678
+ * """
+ * }}}
+ */
 def sepByEol2[A](p: Parsley[A]) = sepByEol1(sepByEol1(p))
 
 val strSepByEol: Parsley[List[String]] = sepByEol1(anStr)
@@ -96,7 +131,7 @@ def countParseFailures(xs: Seq[Result[?, ?]]): Int = xs.count { _.isFailure }
 
 /**
   * Inverse of `between`. Parses `pa` and `pb` into a tuple, separated by `pc`.
-  * 
+  *
   * @example ```
   * around(digit, digit, char(',')).parse("3,3") // => Success(('3', '3'))
   * ```
