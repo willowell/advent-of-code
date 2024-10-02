@@ -1,0 +1,374 @@
+cabal-version:       2.4
+
+name:                aoc
+version:             0.4.0.0
+synopsis:            My Advent of Code solutions.
+description:         My Advent of Code solutions.
+homepage:            https://github.com/willowell/advent-of-code/advent-of-code-haskell/README.md
+license:             AGPL-3.0-or-later
+license-file:        LICENSE.txt
+author:              William Howell (https://github.com/willowell)
+maintainer:          wlm.howell@gmail.com
+copyright:           2024 William Howell
+
+
+extra-source-files:
+  CHANGELOG.md
+  README.md
+build-type:          Simple
+tested-with:
+  GHC == 9.4.8
+
+
+source-repository head
+  type: git
+  location: https://github.com/willowell/advent-of-code/
+
+
+common deps
+  build-depends:
+    -- GHC 9.2.x, 9.4.x
+    base >=4.16 && <5
+
+    -- JSON decoding and encoding
+    -- https://hackage.haskell.org/package/aeson
+    , aeson
+
+    -- Terminal colors!
+    -- https://hackage.haskell.org/package/ansi-terminal
+    , ansi-terminal
+
+    -- Byte strings
+    -- https://hackage.haskell.org/package/bytestring
+    , bytestring
+
+    -- Comonads
+    -- https://hackage.haskell.org/package/comonad
+    , comonad
+
+    -- Streaming data processing library
+    -- https://hackage.haskell.org/package/conduit
+    , conduit
+
+    -- Assorted concrete container types
+    -- e.g., `Graph`, `Map`, `Sequence`, `Set`, and `Tree`
+    -- https://hackage.haskell.org/package/containers
+    , containers
+
+    -- `Default` typeclass
+    -- https://hackage.haskell.org/package/data-default
+    , data-default
+
+    -- Platform-agnostic filesystem operations
+    -- https://hackage.haskell.org/package/directory
+    , directory
+
+    -- Functional Graph Library
+    -- https://hackage.haskell.org/package/fgl
+    , fgl
+
+    , filepath
+
+    -- Finite number type, e.g., `type Day = Finite 25`
+    -- https://hackage.haskell.org/package/finite-typelits
+    , finite-typelits
+
+    , formatting
+
+    -- https://hackage.haskell.org/package/hashable
+    , hashable
+
+    , hspec
+
+    -- Low-level HTTP Client
+    -- https://hackage.haskell.org/package/http-client
+    , http-client
+
+    -- "Optimised list functions for doing index-related things."
+    -- https://hackage.haskell.org/package/ilist
+    , ilist
+
+    -- https://hackage.haskell.org/package/KMP
+    , KMP
+
+    -- Lenses, Folds, and Traversals
+    -- Most notably, allows for an imperative-ish interface for deeply nested structures
+    -- https://hackage.haskell.org/package/lens
+    , lens
+
+    -- Linear Algebra
+    -- Vectors, Matrices, etc.
+    -- https://hackage.haskell.org/package/linear
+    , linear
+
+    -- Industrial-strength monadic parser combinators
+    -- Combined with `parser-combinators`, provides an
+    -- easy and delightful interface for parsing characters.
+    -- https://hackage.haskell.org/package/megaparsec
+    , megaparsec
+
+    -- Monad Loops
+    -- https://hackage.haskell.org/package/monad-loops
+    , monad-loops
+
+    -- Monad Transformer Library
+    -- https://hackage.haskell.org/package/mtl
+    , mtl
+
+    -- Applicative command line options parser
+    -- https://hackage.haskell.org/package/optparse-applicative
+    , optparse-applicative
+
+    -- Parser Combinators
+    -- https://hackage.haskell.org/package/parser-combinators
+    , parser-combinators
+
+    -- Primitive memory-related operations
+    -- https://hackage.haskell.org/package/primitive
+    , primitive
+
+    -- Applicative interface for building Regex
+    -- https://hackage.haskell.org/package/regex-applicative
+    , regex-applicative
+
+    , relude
+
+    -- High-level HTTP Client Library
+    -- https://hackage.haskell.org/package/req
+    , req
+
+    -- Additional functions for working with `Data.Tree` from `containers`,
+    -- especially mutation-like functions like `insert`.
+    -- https://hackage.haskell.org/package/rosezipper
+    , rosezipper
+
+    -- DFS, BFS, Dijkstra, A*, etc.
+    -- https://hackage.haskell.org/package/search-algorithms-0.3.2
+    , search-algorithms
+
+    -- Combinators for splitting lists.
+    -- There is some overlap with `parser-combinators`.
+    -- https://hackage.haskell.org/package/split
+    , split
+
+    -- Efficient packed Unicode text type.
+    -- Typically better-suited for text than Haskell's `String` type.
+    -- https://hackage.haskell.org/package/text
+    , text
+
+    -- Time library
+    -- https://hackage.haskell.org/package/time
+    , time
+
+    -- Hash-based container types
+    -- e.g., `HashMap` and `HashSet`.
+    -- https://hackage.haskell.org/package/unordered-containers
+    , unordered-containers
+
+    , utility-ht
+
+    -- Efficient arrays
+    -- https://hackage.haskell.org/package/vector
+    , vector
+
+    -- Efficient algorithms for efficient arrays!
+    -- https://hackage.haskell.org/package/vector-algorithms
+    , vector-algorithms
+
+    -- YAML parser and writer.
+    -- Can bridge to Aeson.
+    -- https://hackage.haskell.org/package/yaml
+    , yaml
+
+
+common lang-exts
+  default-language: Haskell2010
+  default-extensions:
+    ApplicativeDo
+    BangPatterns
+    BlockArguments
+    ConstraintKinds
+    DataKinds
+    DeriveFunctor
+    DeriveFoldable
+    DeriveTraversable
+    DerivingVia
+    DerivingStrategies
+    TypeFamilies
+    FlexibleContexts
+    FlexibleInstances
+    FunctionalDependencies
+    GADTs
+    GeneralizedNewtypeDeriving
+    ImplicitParams
+    LambdaCase
+    MultiParamTypeClasses
+    NamedFieldPuns
+    OverloadedStrings
+    PolyKinds
+    RankNTypes
+    RecordWildCards
+    RoleAnnotations
+    ScopedTypeVariables
+    TupleSections
+    TypeApplications
+    TypeFamilyDependencies
+    TypeOperators
+    ViewPatterns
+
+
+common ghc-opts
+  ghc-options:
+    -O2
+    -threaded
+    -rtsopts
+    -with-rtsopts=-N
+    -funbox-small-strict-fields
+    -Wall
+    -Wcompat
+    -Widentities
+    -Wincomplete-record-updates
+    -Wincomplete-uni-patterns
+    -Wmissing-home-modules
+    -Wno-unused-do-bind
+    -Wno-unused-top-binds
+    -Wpartial-fields
+    -Wredundant-constraints
+
+
+library solutions
+  import: deps, lang-exts, ghc-opts
+  hs-source-dirs: solutions
+  build-depends: aoc, harness
+  exposed-modules:
+    -- 2015 ---------------------------------------------------------
+      Y2015.Day01, Y2015.Day02, Y2015.Day03, Y2015.Day04, Y2015.Day05
+    , Y2015.Day06, Y2015.Day07, Y2015.Day08, Y2015.Day09, Y2015.Day10
+    , Y2015.Day11, Y2015.Day12, Y2015.Day13, Y2015.Day14, Y2015.Day15
+    , Y2015.Day16, Y2015.Day17, Y2015.Day18, Y2015.Day19, Y2015.Day20
+    , Y2015.Day21, Y2015.Day22, Y2015.Day23, Y2015.Day24, Y2015.Day25
+    -- 2016 ---------------------------------------------------------
+    , Y2016.Day01, Y2016.Day02, Y2016.Day03, Y2016.Day04, Y2016.Day05
+    , Y2016.Day06, Y2016.Day07, Y2016.Day08, Y2016.Day09, Y2016.Day10
+    , Y2016.Day11, Y2016.Day12, Y2016.Day13, Y2016.Day14, Y2016.Day15
+    , Y2016.Day16, Y2016.Day17, Y2016.Day18, Y2016.Day19, Y2016.Day20
+    , Y2016.Day21, Y2016.Day22, Y2016.Day23, Y2016.Day24, Y2016.Day25
+    -- 2017 ---------------------------------------------------------
+    , Y2017.Day01, Y2017.Day02, Y2017.Day03, Y2017.Day04, Y2017.Day05
+    , Y2017.Day06, Y2017.Day07, Y2017.Day08, Y2017.Day09, Y2017.Day10
+    , Y2017.Day11, Y2017.Day12, Y2017.Day13, Y2017.Day14, Y2017.Day15
+    , Y2017.Day16, Y2017.Day17, Y2017.Day18, Y2017.Day19, Y2017.Day20
+    , Y2017.Day21, Y2017.Day22, Y2017.Day23, Y2017.Day24, Y2017.Day25
+    -- 2018 ---------------------------------------------------------
+    , Y2018.Day01, Y2018.Day02, Y2018.Day03, Y2018.Day04, Y2018.Day05
+    , Y2018.Day06, Y2018.Day07, Y2018.Day08, Y2018.Day09, Y2018.Day10
+    , Y2018.Day11, Y2018.Day12, Y2018.Day13, Y2018.Day14, Y2018.Day15
+    , Y2018.Day16, Y2018.Day17, Y2018.Day18, Y2018.Day19, Y2018.Day20
+    , Y2018.Day21, Y2018.Day22, Y2018.Day23, Y2018.Day24, Y2018.Day25
+    -- 2019 ---------------------------------------------------------
+    , Y2019.Day01, Y2019.Day02, Y2019.Day03, Y2019.Day04, Y2019.Day05
+    , Y2019.Day06, Y2019.Day07, Y2019.Day08, Y2019.Day09, Y2019.Day10
+    , Y2019.Day11, Y2019.Day12, Y2019.Day13, Y2019.Day14, Y2019.Day15
+    , Y2019.Day16, Y2019.Day17, Y2019.Day18, Y2019.Day19, Y2019.Day20
+    , Y2019.Day21, Y2019.Day22, Y2019.Day23, Y2019.Day24, Y2019.Day25
+    -- 2020 ---------------------------------------------------------
+    , Y2020.Day01, Y2020.Day02, Y2020.Day03, Y2020.Day04, Y2020.Day05
+    , Y2020.Day06, Y2020.Day07, Y2020.Day08, Y2020.Day09, Y2020.Day10
+    , Y2020.Day11, Y2020.Day12, Y2020.Day13, Y2020.Day14, Y2020.Day15
+    , Y2020.Day16, Y2020.Day17, Y2020.Day18, Y2020.Day19, Y2020.Day20
+    , Y2020.Day21, Y2020.Day22, Y2020.Day23, Y2020.Day24, Y2020.Day25
+    -- 2021 ---------------------------------------------------------
+    , Y2021.Day01, Y2021.Day02, Y2021.Day03, Y2021.Day04, Y2021.Day05
+    , Y2021.Day06, Y2021.Day07, Y2021.Day08, Y2021.Day09, Y2021.Day10
+    , Y2021.Day11, Y2021.Day12, Y2021.Day13, Y2021.Day14, Y2021.Day15
+    , Y2021.Day16, Y2021.Day17, Y2021.Day18, Y2021.Day19, Y2021.Day20
+    , Y2021.Day21, Y2021.Day22, Y2021.Day23, Y2021.Day24, Y2021.Day25
+    -- 2022 ---------------------------------------------------------
+    , Y2022.Day01, Y2022.Day02, Y2022.Day03, Y2022.Day04, Y2022.Day05
+    , Y2022.Day06, Y2022.Day07, Y2022.Day08, Y2022.Day09, Y2022.Day10
+    , Y2022.Day11, Y2022.Day12, Y2022.Day13, Y2022.Day14, Y2022.Day15
+    , Y2022.Day16, Y2022.Day17, Y2022.Day18, Y2022.Day19, Y2022.Day20
+    , Y2022.Day21, Y2022.Day22, Y2022.Day23, Y2022.Day24, Y2022.Day25
+    -- 2023 ---------------------------------------------------------
+    , Y2023.Day01, Y2023.Day02, Y2023.Day03, Y2023.Day04, Y2023.Day05
+    , Y2023.Day06, Y2023.Day07, Y2023.Day08, Y2023.Day09, Y2023.Day10
+    , Y2023.Day11, Y2023.Day12, Y2023.Day13, Y2023.Day14, Y2023.Day15
+    , Y2023.Day16, Y2023.Day17, Y2023.Day18, Y2023.Day19, Y2023.Day20
+    , Y2023.Day21, Y2023.Day22, Y2023.Day23, Y2023.Day24, Y2023.Day25
+    -- 2024 ---------------------------------------------------------
+    --, Y2024.Day01, Y2024.Day02, Y2024.Day03, Y2024.Day04, Y2024.Day05
+    --, Y2024.Day06, Y2024.Day07, Y2024.Day08, Y2024.Day09, Y2024.Day10
+    --, Y2024.Day11, Y2024.Day12, Y2024.Day13, Y2024.Day14, Y2024.Day15
+    --, Y2024.Day16, Y2024.Day17, Y2024.Day18, Y2024.Day19, Y2024.Day20
+    --, Y2024.Day21, Y2024.Day22, Y2024.Day23, Y2024.Day24, Y2024.Day25
+  other-modules:
+    Paths_aoc
+  autogen-modules:
+    Paths_aoc
+
+
+library
+  import: deps, lang-exts, ghc-opts
+  exposed-modules:
+    Control.Combinators
+    Data.Aviary.Birds
+    Data.Colour
+    Data.DynMap
+    Data.FreqMap
+    Data.Graph3D
+    Data.Grid2D
+    Data.PagedVector
+    Data.RatAngle
+    Harness
+    ParserPrelude
+    Util
+  other-modules:
+    Paths_aoc
+  autogen-modules:
+    Paths_aoc
+  hs-source-dirs:
+    src
+
+
+library harness
+  import: deps, lang-exts, ghc-opts
+  hs-source-dirs: harness
+  build-depends: aoc
+  exposed-modules:
+      AOC.Solution
+    , AOC.Harness
+    , AOC.Config
+  default-extensions:
+    OverloadedStrings
+  ghc-options:
+    -Wno-orphans
+  other-modules:
+    Paths_aoc
+  autogen-modules:
+    Paths_aoc
+
+
+executable aoc-exe
+  import: deps, lang-exts, ghc-opts
+  main-is: Main.hs
+  build-depends: aoc, harness, solutions
+  other-modules:
+    Paths_aoc
+  autogen-modules:
+    Paths_aoc
+  hs-source-dirs:
+    app
+
+
+test-suite aoc-test
+  import: deps, lang-exts, ghc-opts
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  build-depends: aoc
+  other-modules:
+    FooSpec
+    Paths_aoc
+  autogen-modules:
+    Paths_aoc
+  hs-source-dirs:
+    test
