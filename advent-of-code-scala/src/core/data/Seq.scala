@@ -30,6 +30,30 @@ extension [A](xss: Seq[Seq[A]]) {
   def rotate90: Seq[Seq[A]] = xss.reverse.transpose
 }
 
+extension (xss: Seq[String]) {
+  /**
+   * Rotate this 2D sequence of characters clockwise by 90 degrees.
+   * 
+   * @example
+   * ```
+   * > val xss = List(
+   *   List('a', 'b', 'c')
+   *   List('d', 'e', 'f')
+   *   List('g', 'h', 'i')
+   * )
+   * 
+   * > xss.rotate90
+   *
+   * List(
+   *   List('g', 'd', 'a')
+   *   List('h', 'e', 'b')
+   *   List('i', 'f', 'c')
+   * )
+   * ```
+  */
+  @annotation.targetName("rotate90seqString") def rotate90 = xss.reverse.transpose
+}
+
 def splitHalf[A](xs: Seq[A]): (Seq[A], Seq[A]) = {
   val half = xs.length / 2
 

@@ -34,7 +34,7 @@ object V3 {
 
   given v3Ordering[A](using num: Numeric[A]): Ordering[V3[A]] = Ordering.by[V3[A], A](_._1).orElseBy(_._2).orElseBy(_._3)
 
-  given v3Ordered[A](using x: V3[A], num: Numeric[A]): scala.math.Ordered[V3[A]] = scala.math.Ordered.orderingToOrdered(x)(v3Ordering)
+  given v3Ordered[A](using x: V3[A], num: Numeric[A]): math.Ordered[V3[A]] = math.Ordered.orderingToOrdered(x)(v3Ordering)
 
   object LensSyntax {
     def _x[@specialized(Int, Double, Boolean) A](using num: Numeric[A]) = Lens[V3[A], A]((v: V3[A]) => v.x)(n => (_, vy, vz) => (n, vy, vz))

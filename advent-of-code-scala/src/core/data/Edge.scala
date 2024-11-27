@@ -15,15 +15,17 @@ case class UEdge(
   override def reversed: UEdge = UEdge(v, u)
 }
 
-given Display[UEdge] with {
-  override def display(e: UEdge) = s"{${e.u}} -> {${e.v}}"
+object UEdge {
+  given Display[UEdge] with {
+    override def display(e: UEdge) = s"{${e.u}} -> {${e.v}}"
+  }
 }
 
 case class WEdge(
   u: Int,
   v: Int,
   weight: Double
-) extends Edge with scala.math.Ordered[WEdge] {
+) extends Edge with math.Ordered[WEdge] {
 
   override def reversed: WEdge = WEdge(v, u, weight)
 
@@ -34,8 +36,8 @@ case class WEdge(
 
 object WEdge {
   def apply(uv: (Int, Int), weight: Double): WEdge = WEdge(uv._1, uv._2, weight)
-}
 
-given Display[WEdge] with {
-  override def display(e: WEdge) = s"{${e.u}} --(${e.weight})-> {${e.v}}"
+  given Display[WEdge] with {
+    override def display(e: WEdge) = s"{${e.u}} --(${e.weight})-> {${e.v}}"
+  }
 }
