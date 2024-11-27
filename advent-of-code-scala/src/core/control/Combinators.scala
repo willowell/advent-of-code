@@ -11,6 +11,10 @@ extension [A](a: A) {
   def |>[B](f: A => B): B = f(a)
 }
 
+extension [A, B](f: A => B) {
+  def <|(a: A): B = f(a)
+}
+
 def fst[A, B](tp: Product2[A, B]) = tp._1
 
 def snd[A, B](tp: Product2[A, B]) = tp._2
