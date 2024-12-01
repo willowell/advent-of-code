@@ -2,35 +2,39 @@
 
 ## 2024
 
-***TBD***
+***Where in the World is the Chief Historian?***
 
-| Day    | Name            | Part 1 | Part 2 |
-|--------|-----------------|--------|--------|
-| Day  1 |                 | [ ]    | [ ]    |
-| Day  2 |                 | [ ]    | [ ]    |
-| Day  3 |                 | [ ]    | [ ]    |
-| Day  4 |                 | [ ]    | [ ]    |
-| Day  5 |                 | [ ]    | [ ]    |
-| Day  6 |                 | [ ]    | [ ]    |
-| Day  7 |                 | [ ]    | [ ]    |
-| Day  8 |                 | [ ]    | [ ]    |
-| Day  9 |                 | [ ]    | [ ]    |
-| Day 10 |                 | [ ]    | [ ]    |
-| Day 11 |                 | [ ]    | [ ]    |
-| Day 12 |                 | [ ]    | [ ]    |
-| Day 13 |                 | [ ]    | [ ]    |
-| Day 14 |                 | [ ]    | [ ]    |
-| Day 15 |                 | [ ]    | [ ]    |
-| Day 16 |                 | [ ]    | [ ]    |
-| Day 17 |                 | [ ]    | [ ]    |
-| Day 18 |                 | [ ]    | [ ]    |
-| Day 19 |                 | [ ]    | [ ]    |
-| Day 20 |                 | [ ]    | [ ]    |
-| Day 21 |                 | [ ]    | [ ]    |
-| Day 22 |                 | [ ]    | [ ]    |
-| Day 23 |                 | [ ]    | [ ]    |
-| Day 24 |                 | [ ]    | [ ]    |
-| Day 25 |                 | [ ]    | [ ]    |
+> The Chief Historian is always present for the big Christmas sleigh launch, but nobody has seen him in months! Last anyone heard, he was visiting locations that are historically significant to the North Pole; a group of Senior Historians has asked you to accompany them as they check the places they think he was most likely to visit.
+>
+> As each location is checked, they will mark it on their list with a star. They figure the Chief Historian must be in one of the first fifty places they'll look, so in order to save Christmas, you need to help them get fifty stars on their list before Santa takes off on December 25th.
+
+| Day    | Name               | Part 1 | Part 2 |
+|--------|--------------------|--------|--------|
+| Day  1 | Historian Hysteria | [x]    | [x]    |
+| Day  2 |                    | [ ]    | [ ]    |
+| Day  3 |                    | [ ]    | [ ]    |
+| Day  4 |                    | [ ]    | [ ]    |
+| Day  5 |                    | [ ]    | [ ]    |
+| Day  6 |                    | [ ]    | [ ]    |
+| Day  7 |                    | [ ]    | [ ]    |
+| Day  8 |                    | [ ]    | [ ]    |
+| Day  9 |                    | [ ]    | [ ]    |
+| Day 10 |                    | [ ]    | [ ]    |
+| Day 11 |                    | [ ]    | [ ]    |
+| Day 12 |                    | [ ]    | [ ]    |
+| Day 13 |                    | [ ]    | [ ]    |
+| Day 14 |                    | [ ]    | [ ]    |
+| Day 15 |                    | [ ]    | [ ]    |
+| Day 16 |                    | [ ]    | [ ]    |
+| Day 17 |                    | [ ]    | [ ]    |
+| Day 18 |                    | [ ]    | [ ]    |
+| Day 19 |                    | [ ]    | [ ]    |
+| Day 20 |                    | [ ]    | [ ]    |
+| Day 21 |                    | [ ]    | [ ]    |
+| Day 22 |                    | [ ]    | [ ]    |
+| Day 23 |                    | [ ]    | [ ]    |
+| Day 24 |                    | [ ]    | [ ]    |
+| Day 25 |                    | [ ]    | [ ]    |
 
 ## 2023
 

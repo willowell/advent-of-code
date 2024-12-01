@@ -12,3 +12,6 @@ repl:
 
 test:
   @scala-cli test .
+
+download year day:
+  @scala-cli run . --main-class download -- --year {{year}} --day {{day}}
