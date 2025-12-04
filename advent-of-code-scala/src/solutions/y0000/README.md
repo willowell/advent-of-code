@@ -22,7 +22,7 @@ scala-cli run . --main-class solutions.y0000.day01.run -- --part a
 
 Alternatively, you can run the day's solution using `just` like so:
 
-```
+```sh
 just run 0000 01
 ```
 
