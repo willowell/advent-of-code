@@ -14,8 +14,6 @@ import spire.math.UByte
 
 case class RGB(r: UByte, g: UByte, b: UByte)
 
-case class ARGB(a: UByte, r: UByte, g: UByte, b: UByte)
-
 object RGB {
   object Parsers {
     val hexadecimalRGB: Parsley[RGB] = for {

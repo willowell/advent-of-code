@@ -1,6 +1,6 @@
 import core.crypto.md5.MD5
 
-class MD5Tests extends munit.FunSuite {
+class Core_Crpyto_MD5_Tests extends munit.FunSuite {
   test("a, b") {
     assert(MD5.hash("a") == "0cc175b9c0f1b6a831c399e269772661")
     assert(MD5.hash("b") == "92eb5ffee6ae2fec3ad71c777531578f")
@@ -13,8 +13,8 @@ class MD5Tests extends munit.FunSuite {
   }
 
   test("known to return leading zeros") {
-    assert(MD5.hash("363") == "00411460f7c92d2124a67ea0f4cb5f85")
-    assert(MD5.hash("jk8ssl") == "0000000018e6137ac2caab16074784a6")
+    assert(MD5.hash("363")                         == "00411460f7c92d2124a67ea0f4cb5f85")
+    assert(MD5.hash("jk8ssl")                      == "0000000018e6137ac2caab16074784a6")
     assert(MD5.hash("j(R1wzR*y[^GxWJ5B>L{-HLETRD") == "00000000000003695b3ae70066f60d42")
   }
 }

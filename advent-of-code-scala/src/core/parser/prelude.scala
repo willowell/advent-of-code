@@ -62,10 +62,10 @@ val englishVowel: Parsley[Char] = satisfy { isEnglishVowel } ? "English vowel (a
 /** Parse a special character. */
 val specialCharacter: Parsley[Char] = satisfy { isSpecialCharacter } ? "special character"
 
-/** Parse a line of alphanumeric text, including whitespace. */
+/** Parse a newline-delimited line of alphanumeric text, including whitespace. */
 val fullLine: Parsley[String] = stringOfSome(letterOrDigit <|> space)
 
-/** Alphanumeric string parser. Same as `fullLine` but does not parse whitespace. */
+/** Parse an alphanumeric string. Same as `fullLine` but does not parse whitespace. */
 val anStr: Parsley[String] = stringOfSome(letterOrDigit)
 
 /** Parse a single ASCII character. */
@@ -88,6 +88,9 @@ val dash: Parsley[Char] = char('-')
 
 /** Parse a dollar sign character. */
 val dollar: Parsley[Char] = char('$')
+
+/** Parse a pound sign character. */
+val poundSign: Parsley[Char] = char('#')
 
 //====================================================================================================================//
 // COMBINATORS                                                                                                        //

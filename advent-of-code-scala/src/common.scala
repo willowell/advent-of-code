@@ -70,12 +70,7 @@ export parsley.combinator.{
   traverse,
 }
 
-export parsley.lift.{
-  lift1 as plift1,
-  lift2 as plift2,
-  lift3 as plift3,
-  lift4 as plift4,
-}
+export parsley.{lift as plift}
 
 export annotation.{switch, tailrec}
 

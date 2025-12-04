@@ -3,7 +3,7 @@ package core.data.freqmap
 import collection.immutable.Map
 
 final case class FreqMap[A](
-  value: Map[A, Int],
+  value: Map[A, Int]
 ) {
   def mostCommon: A = value.maxBy { _._2 }._1
   def leastCommon: A = value.minBy { _._2 }._1

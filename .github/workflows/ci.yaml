@@ -5,13 +5,15 @@
 #
 
 name: "Continuous Integration"
+
 on:
+  # Push to main branch
   push:
     branches:
       - main
-    tags:
-      - "v*"
-  pull_request:
+
+  # Enable manually running workflow in GitHub
+  workflow_dispatch:
 
 jobs:
   scala-build-and-test:
@@ -22,23 +24,29 @@ jobs:
           - ubuntu-latest
         jvm:
           - "temurin:21"
+          - "temurin:25"
     runs-on: ${{ matrix.os }}
     steps:
+      # Step 1: Checkout repository
       - name: "Checkout repository"
         uses: actions/checkout@v4
         with:
           fetch-depth: 1
 
+      # Step 2: Setup Scala-CLI
       - name: "Setup Scala-CLI project using VirtusLab action"
-        uses: VirtusLab/scala-cli-setup@v1.5.0
+        uses: VirtusLab/scala-cli-setup@v1
         with:
           jvm: ${{ matrix.jvm }}
 
+      # Step 3: Compile project
       - name: "Compile Scala-CLI project"
         run: scala-cli compile advent-of-code-scala
 
+      # Step 4: Run simple test as sanity check
       - name: "Sanity check by testing solution for Day 1 of 2015"
         run: scala-cli test advent-of-code-scala --test-only 'Y2015_Day01_Suite'
 
+      # Step 5: Run all the tests
       - name: "Run all tests"
         run: scala-cli test advent-of-code-scala
