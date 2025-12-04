@@ -27,11 +27,38 @@ object Api {
     .send()
 }
 
-case class TokenNotFound() extends Exception(TokenNotFound.msg) {}
+object ApiProblems {
+  case class TokenNotFound() extends Exception(TokenNotFound.msg) {}
 
-object TokenNotFound {
-  val msg = """You must provide your Advent of Code session token as environment variable
-as AOC_SESSION_TOKEN or in ~/.aocd/token"""
+  object TokenNotFound {
+    val msg = """You must provide your Advent of Code session token as environment variable
+  AOC_SESSION_TOKEN or in ~/.aocd/token"""
+  }
+
+  case class BadToken() extends Exception(BadToken.msg) {}
+
+  object BadToken {
+    val msg = """The response from the Advent of Code website indicated an issue with your session token.
+  Please verify that the session token you provided is up-to-date."""
+  }
+
+  case class Pebkac() extends Exception(Pebkac.msg) {}
+
+  object Pebkac {
+    val msg = """The Advent of Code website threw a 4xx error. What did you think was going to happen?"""
+  }
+
+  case class Misfortune() extends Exception(Misfortune.msg) {}
+
+  object Misfortune {
+    val msg = """Congratulations! The Advent of Code website threw a 5xx error."""
+  }
+
+  case class Impatience() extends Exception(Impatience.msg) {}
+
+  object Impatience {
+    val msg = """This puzzle hasn't unlocked yet. Please be patient."""
+  }
 }
 
 object Aocd {
@@ -47,7 +74,7 @@ object Aocd {
     if (os.exists(tokenFile)) {
       os.read(tokenFile).trim().nn
     } else {
-      throw TokenNotFound()
+      throw ApiProblems.TokenNotFound()
     }
   }
 
@@ -95,6 +122,22 @@ object Aocd {
     val res = Api.getData(year, day, token)
 
     val content = res.body
+
+    if (res.code.isServerError) {
+      throw ApiProblems.Misfortune()
+    }
+
+    if (res.code.isClientError) {
+      throw ApiProblems.Pebkac()
+    }
+
+    if (content.contains("Please log in")) {
+      throw ApiProblems.BadToken()
+    }
+
+    if (content.contains("before it unlocks")) {
+      throw ApiProblems.Impatience()
+    }
 
     content
   }
