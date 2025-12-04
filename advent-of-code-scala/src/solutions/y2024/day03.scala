@@ -8,7 +8,6 @@ import solutions.y2024.year
 import harness.*
 
 import util.matching.Regex
-import solutions.y2023.day03.ignore
 
 given day: Day = Day(3)
 object run extends AocDayRunner(part1, part2)
@@ -21,7 +20,7 @@ val mulInstructionRegex = """mul\((\d+),(\d+)\)""".r
 
 val ignoreRegex = """don't\(\).*?(?=do\(\)|\Z)""".r
 
-def parseInput(input: String, ignoreStuffBetweenDontAndDo: Boolean = false): List[(Int, Int)] = 
+def parseInput(input: String, ignoreStuffBetweenDontAndDo: Boolean = false): List[(Int, Int)] =
   mulInstructionRegex.findAllMatchIn(
     if !ignoreStuffBetweenDontAndDo
       then input
