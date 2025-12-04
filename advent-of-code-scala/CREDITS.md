@@ -70,6 +70,20 @@ When I got stuck, I referred to the following for guidance.
 
 [github.com/L7R7/game-of-life-scala](https://github.com/L7R7/game-of-life-scala/tree/master)
 
+I also use a modified version of this code snippet from this repository for printing other 2D-point-keyed maps in other solutions:
+
+(formatting adjusted)
+
+```scala
+override lazy val toString: String = cells.toSeq
+  .sortWith((a: (Pos, Cell), b: (Pos, Cell)) => a._1.x.compareTo(b._1.x) < 0)
+  .sortWith((a: (Pos, Cell), b: (Pos, Cell)) => a._1.y.compareTo(b._1.y) < 0)
+  .map(_._2.toString)
+  .mkString(" ")
+  .grouped(2 * width)
+  .mkString(LineSeparator)
+```
+
 ## 2016
 
 ## 2017
@@ -85,6 +99,10 @@ When I got stuck, I referred to the following for guidance.
 ## 2022
 
 ## 2023
+
+## 2024
+
+## 2025
 
 ## License Info
 
