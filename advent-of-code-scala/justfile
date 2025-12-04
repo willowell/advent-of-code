@@ -1,6 +1,12 @@
 default:
   just --list
 
+clean:
+  @scala-cli clean .
+
+build:
+  @scala-cli compile .
+
 run year day:
   @scala-cli run . --main-class solutions.y{{year}}.day{{day}}.run
 
@@ -12,6 +18,9 @@ repl:
 
 test:
   @scala-cli test .
+
+create year day:
+  @scala-cli run . --main-class create -- --year {{year}} --day {{day}}
 
 download year day:
   @scala-cli run . --main-class download -- --year {{year}} --day {{day}}
