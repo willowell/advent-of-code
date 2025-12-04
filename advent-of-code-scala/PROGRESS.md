@@ -1,5 +1,24 @@
 # Progress
 
+## 2025
+
+***The 12 Days of Christmas***
+
+| Day    | Name                | Part 1 | Part 2 |
+|--------|---------------------|--------|--------|
+| Day  1 | Secret Entrance     | [x]    | [ ]    |
+| Day  2 | Gift Shop           | [x]    | [ ]    |
+| Day  3 | Lobby               | [ ]    | [ ]    |
+| Day  4 | Printing Department | [ ]    | [ ]    |
+| Day  5 |                     | [ ]    | [ ]    |
+| Day  6 |                     | [ ]    | [ ]    |
+| Day  7 |                     | [ ]    | [ ]    |
+| Day  8 |                     | [ ]    | [ ]    |
+| Day  9 |                     | [ ]    | [ ]    |
+| Day 10 |                     | [ ]    | [ ]    |
+| Day 11 |                     | [ ]    | [ ]    |
+| Day 12 |                     | [ ]    | [ ]    |
+
 ## 2024
 
 ***Where in the World is the Chief Historian?***
@@ -11,9 +30,9 @@
 | Day    | Name               | Part 1 | Part 2 |
 |--------|--------------------|--------|--------|
 | Day  1 | Historian Hysteria | [x]    | [x]    |
-| Day  2 |                    | [ ]    | [ ]    |
-| Day  3 |                    | [ ]    | [ ]    |
-| Day  4 |                    | [ ]    | [ ]    |
+| Day  2 | Red-Nosed Reports  | [ ]    | [ ]    |
+| Day  3 | Mull It Over       | [x]    | [x]    |
+| Day  4 | Ceres Search       | [ ]    | [ ]    |
 | Day  5 |                    | [ ]    | [ ]    |
 | Day  6 |                    | [ ]    | [ ]    |
 | Day  7 |                    | [ ]    | [ ]    |
